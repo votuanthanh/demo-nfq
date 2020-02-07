@@ -1,0 +1,123 @@
+body {
+  line-height: 1;
+  font-family: $font-family-names;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.collection-container {
+  margin-top: 73px;
+  padding-right: 38px;
+  padding-left: 42px;
+}
+
+.collection-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collection-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-top: 60px;
+}
+
+.c-title {
+  color: $color-gray-30;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
+
+.c-button {
+  display: inline-block;
+  font-family: $font-family-names;
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 12px 11px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &_rectangle {
+    padding: 8px 13px 10px 10px;
+  }
+
+  &_secondary {
+    color: $color-white;
+    background-color: $color-purple;
+    border-color: $color-purple;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
+
+/*------------------------------------*\
+    #NASA ITEM
+\*------------------------------------*/
+.c-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  &__image {
+    > img {
+      width: 100%;
+      height: 170px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 29px;
+    margin-bottom: 8px;
+    > span {
+      font-size: 12;
+      font-weight: 400;
+      color: $color-gray-60;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: $color-black;
+  }
+
+  &__content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $color-gray-60;
+    margin-top: 10px;
+    margin-bottom: 11px;
+  }
+
+  &__action {
+    display: flex;
+    flex-direction: row;
+  }
+}

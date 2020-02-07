@@ -11,5 +11,6 @@ import store from "./store";
 render(
   <Provider store={store}>
     <App />
-  </Provider>, document.getElementById("root")
+  </Provider>,
+  document.getElementById("root")
 );

@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+/*------------------------------------*\
+     #COLORS
+      * Brand Colors...............Globally-available variables and config
+      * Neutral Colors.............Grayscale colors, including white and black
+      * Utility Colors.............Info, Warning, Error, Success
+ \*------------------------------------*/
+
+@function black($opacity) {
+  @return rgba(black, $opacity);
+}
+
+/**
+ * Brand Colors
+ * 1) Brand=specific colors
+ */
+$color-brand-blue: #0000ff;
+
+/**
+ * Neutral Colors
+ * 1) Neutral colors are grayscale values used throughout the UI
+ */
+$color-white: #fff;
+$color-gray-20: black(0.2);
+$color-gray-30: black(0.3);
+$color-gray-40: black(0.4);
+$color-gray-60: black(0.6);
+$color-black: black(1);
+
+/**
+ * Utility Colors
+ * 2) Neutral colors are grayscale values used throughout the UI
+ */
+$color-purple: #784cc0;
+
+/*------------------------------------*\
+     #PATHS
+ \*------------------------------------*/
+
+//** File name for all font files.
+$font-family-names: Helvetica, "Helvetica Neue", Roboto, Arial, sans-serif,
+  "Segoe UI Emoji", "Segoe UI Symbol";
+$icon-font-path: "../assets/fonts/";
+$icon-font-name: "glyphicons-halflings-regular" !default;
