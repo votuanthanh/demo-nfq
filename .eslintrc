@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "env": {
+      "browser": false,
+      "commonjs": true,
+      "es6": true
+  },
+  "extends": [
+      "plugin:react/recommended"
+    ],
+  "parserOptions": {
+      "ecmaFeatures": {
+          "experimentalObjectRestSpread": true,
+          "jsx": true
+      },
+      "sourceType": "module"
+  },
+  "rules": {
+      "react/jsx-indent": ["error",2],
+      "linebreak-style": ["error", "unix"],
+      "quotes": ["error", "double"],
+      "semi": ["warn", "always"]
+  }
+}
